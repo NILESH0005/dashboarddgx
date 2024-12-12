@@ -1,0 +1,265 @@
+/* General Styling */
+/* General Widget Styling */
+.widget {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.widget h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.widget .h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff; /* Default color */
+}
+
+/* Dark Mode Styling */
+.widget.dark {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+.widget.dark h5 {
+  color: #ecf0f1;
+}
+
+.widget.dark .h2 {
+  color: #f39c12; /* Dark mode color for text */
+}
+
+/* Widget Hover Effect */
+.widget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Light Mode Specific */
+.widget.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.widget.light .h2 {
+  color: #17a2b8; /* Light mode color for text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .widget {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+  /* Top Performing Students Table */
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+    padding: 0.75rem;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    color: #495057;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* News Section */
+  .news-widget {
+    background-color: #17a2b8;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .news-list {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .news-item {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .news-item:last-child {
+    border-bottom: none;
+  }
+  
+  .news-item:hover {
+    transform: translateX(10px);
+    background-color: #e9ecef;
+  }
+  
+  .news-item h6 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .news-item p {
+    color: #ffffff;
+    margin-top: 0.5rem;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .dashboard-widget {
+      margin-bottom: 1rem;
+    }
+    .news-widget {
+      margin-top: 1rem;
+    }
+  }
+  
+ /* Default Light Theme */
+.main-content.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar-light {
+  background-color: #f8f9fa;
+}
+
+.main-content.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+}
+
+
+/* Chart Area Dynamic Theme Handled by Inline Styles */
+/* General Styling for Widgets */
+.dashboard-widget.light {
+  background-color: #ffffff;
+  color: #000000; /* Light mode text color */
+}
+
+.dashboard-widget.dark {
+  background-color: #2c3e50;
+  color: #ffffff; /* Dark mode text color */
+}
+
+.widget-title.light {
+  color: #343a40; /* Light mode title color */
+}
+
+.widget-title.dark {
+  color: #ffffff; /* Dark mode title color */
+}
+
+/* Table Styling for Light and Dark Themes */
+.table.light th, .table.light td {
+  background-color: #f8f9fa; /* Light theme background for table */
+  color: #495057;
+}
+
+.table.dark th, .table.dark td {
+  background-color: #34495e; /* Dark theme background for table */
+  color: #ecf0f1; /* Dark mode text color */
+}
+
+.table-striped.light tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2; /* Light mode odd row background */
+}
+
+.table-striped.dark tbody tr:nth-of-type(odd) {
+  background-color: #2c3e50; /* Dark mode odd row background */
+}
+
+/* News Section - Light/Dark Theme */
+.news-widget.light {
+  background-color: #17a2b8; /* Light theme background */
+}
+
+.news-widget.dark {
+  background-color: #1abc9c; /* Dark theme background */
+}
+
+.news-item.light {
+  background-color: #ffffff; /* Light mode news item */
+  color: #000;
+}
+
+.news-item.dark {
+  background-color: #34495e; /* Dark mode news item */
+  color: #fff;
+}
+
+/* Navbar - Light/Dark Theme */
+.navbar-light {
+  background-color: #f8f9fa;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+}
+
+.navbar-light .navbar-brand {
+  color: #343a40;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+}
+
+/* Chart - Dynamic Theme Handled by Inline Styles */
+.highcharts-container.light {
+  background-color: #ffffff;
+}
+
+.highcharts-container.dark {
+  background-color: #2c3e50;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-widget.light,
+  .dashboard-widget.dark {
+    margin-bottom: 1rem;
+  }
+  .news-widget.light,
+  .news-widget.dark {
+    margin-top: 1rem;
+  }
+}
+
+
+
+/*-----chatbot------*/
+.dashboard-container {
+  position: relative;
+}
+
+.chatbot {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

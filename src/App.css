@@ -1,0 +1,110 @@
+/* Sidebar */
+.sidebar {
+  background-color: #1f2d3d; /* Darker background for a modern look */
+  color: white;
+  padding: 1.5rem;
+  height: 100%;
+  position: fixed;
+  width: 220px; /* Slightly larger sidebar */
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  transition: width 0.3s ease; /* Smooth transition for collapsing */
+}
+
+.sidebar:hover {
+  width: 250px; /* Sidebar expands slightly on hover */
+}
+
+/* Sidebar Links */
+.sidebar .nav-link {
+  color: #b8c7d1; /* Soft grey color for links */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  color: #007bff; /* Blue color on hover */
+  padding-left: 10px; /* Add some left padding on hover */
+}
+
+.sidebar .nav-link i {
+  font-size: 1.3rem; /* Icon size */
+  margin-right: 10px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #007bff, #00c6ff); /* Gradient header background */
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Larger shadow for emphasis */
+  margin-left: 240px; /* To avoid overlap with sidebar */
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+.footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 1.5rem;
+  color: #666;
+  font-size: 1rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0056b3;
+}
+
+/* Dashboard Card */
+.dashboard-card {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Body Background */
+body {
+  background-color: #f4f5f7; /* Light background color for the page */
+  font-family: 'Roboto', sans-serif; /* Clean, modern font */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Collapsed sidebar on small screens */
+  }
+
+  .sidebar .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    margin-left: 0; /* Header adjusts to full width */
+  }
+}

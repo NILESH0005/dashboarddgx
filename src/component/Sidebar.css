@@ -1,0 +1,122 @@
+/* Custom Tooltip Styling */
+
+/* Sidebar Container */
+.sidebar-container {
+    position: fixed;
+    top: 83px;
+    left: 0;
+    bottom: 0;
+    background-color: #f8f9fa;
+    transition: width 0.3s ease;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 4.5rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Ensure full height */
+}
+
+.sidebar-container.expanded {
+    width: 15rem;
+}
+
+.sidebar-links {
+    flex-grow: 1; /* This will make the links grow and take up most of the space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #495057;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.sidebar-link:hover {
+    background-color: #e9ecef;
+}
+
+.sidebar-link .fs-3 {
+    margin-right: 1rem;
+}
+
+/* Sidebar Text */
+.sidebar-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.sidebar-container.expanded .sidebar-text {
+    opacity: 1;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle-btn {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+.sidebar-toggle-btn:focus {
+    outline: none;
+}
+
+/* Profile Dropdown (Positioned at the bottom) */
+.dropdown {
+    margin-top: auto; /* This pushes the profile dropdown to the bottom */
+    text-align: center;
+}
+
+.dropdown-menu {
+    min-width: 10rem;
+}
+
+/* Sidebar Overlay (background fade) */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.sidebar-container.light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.sidebar-container.dark {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.theme-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,33 @@
+.theme-toggle-button button {
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  [data-theme="dark"] .theme-toggle-button button {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  [data-theme="light"] .theme-toggle-button button {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+  /* General styles for the icons */
+.notification-icon, .user-account {
+  color: inherit; /* Inherit color from parent element */
+  transition: color 0.3s ease;
+}
+
+/* Dark Mode Icon Colors */
+[data-theme="dark"] .notification-icon,
+[data-theme="dark"] .user-account {
+  color: #fff; /* Set the icon color to white in dark mode */
+}
+
+/* Light Mode Icon Colors */
+[data-theme="light"] .notification-icon,
+[data-theme="light"] .user-account {
+  color: #000; /* Set the icon color to black in light mode */
+}
